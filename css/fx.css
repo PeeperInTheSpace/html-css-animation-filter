@@ -94,10 +94,10 @@
 /* EX N.10 */
 
 .ex-10-icon {
-    animation: rotation 2s infinite linear;
+    animation: endlessrotation 2s infinite linear;
 }
 
-@keyframes rotation {
+@keyframes endlessrotation {
     from {
         transform: rotate(0deg);
     }
@@ -110,7 +110,7 @@
 /* EX N.11*/
 
 .ex-11-icon:hover {
-    animation: rotation 2s alternate;
+    animation: rotation 2s;
 }
 
 @keyframes rotation {
@@ -134,29 +134,94 @@
 
 /* EX N.12*/
 
-.ex-12-top-white:hover {
-    animation: rotation 2s alternate;
+.ex-12-button:hover .ex-12-top-white {
+    animation: movementtop 2s linear alternate 2;
 }
 
-.ex-12-bottom-white:hover {
-    animation: rotation 2s alternate;
+@keyframes movementtop {
+    from {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(115px)
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: movementbottom 2s linear alternate 2;
 }
 
-@keyframes rotation {
+@keyframes movementbottom {
+    from {
+        transform: translateX(0px)
+    }
+
+    to {
+        transform: translateX(-95px)
+    }
+}
+
+/* EX N.13*/
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: movementtop 7s;
+}
+
+@keyframes movementtop {
     0% {
-        transform:
+        transform: translateX(0px)
     }
 
-    80% {
-        transform: rotate(270deg);
+    20% {
+        transform: translateX(140px)
     }
 
-    85% {
-        transform: rotate(270deg);
+    30% {
+        transform: translate(140px, 60px)
     }
 
-    100% {
-        transform: rotate(0deg);
+    40% {
+        transform: translate(-40px, 60px)
+    }
+
+    50% {
+        transform: translateX(-40px)
+    }
+
+    60% {
+        transform: translateX(0px)
+    }
+
+
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: movementbottom 7s;
+}
+
+@keyframes movementbottom {
+    0% {
+        transform: translateX(0px)
+    }
+
+    20% {
+        transform: translateX(-120px)
+    }
+
+    30% {
+        transform: translate(-120px, -60px)
+    }
+
+    40% {
+        transform: translate(80px, -60px)
+    }
+
+    50% {
+        transform: translateX(60px)
+    }
+
+    60% {
+        transform: translateX(0px)
     }
 
 }
