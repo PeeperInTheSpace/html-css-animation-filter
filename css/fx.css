@@ -135,10 +135,10 @@
 /* EX N.12*/
 
 .ex-12-button:hover .ex-12-top-white {
-    animation: movementtop 2s linear alternate 2;
+    animation: movementtopex11 2s linear alternate 2;
 }
 
-@keyframes movementtop {
+@keyframes movementtopex11 {
     from {
         transform: translateX(0px)
     }
@@ -148,10 +148,10 @@
     }
 }
 .ex-12-button:hover .ex-12-bottom-white {
-    animation: movementbottom 2s linear alternate 2;
+    animation: movementbottomex11 2s linear alternate 2;
 }
 
-@keyframes movementbottom {
+@keyframes movementbottomex11 {
     from {
         transform: translateX(0px)
     }
